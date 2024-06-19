@@ -1,0 +1,25 @@
+// Outline Card
+.v-card--variant-outlined {
+  border: 1px solid #e8e8e8 !important;
+  .v-divider {
+    border: 1px solid #f7f7f7 !important;
+  }
+}
+
+.v-card-text {
+  padding: $card-text-spacer;
+}
+
+.v-card-actions {
+  padding: 14px $card-text-spacer 14px;
+}
+
+
+.v-card-item {
+  padding: $card-item-spacer-xy;
+}
+
+.v-card-subtitle {
+  font-size: 0.75rem;
+}
+

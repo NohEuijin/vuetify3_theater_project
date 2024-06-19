@@ -1,0 +1,155 @@
+:root {
+  --theme-color-background: #ffffff;
+  --theme-color-font: #333333;
+}
+/*
+@import url()
+: 을 사용하면 api 로 인식하고 느리게 호출한다.
+*/
+// @import '@/assets/css/layout/_sidebar.scss';
+
+/************* Font *************/
+/* 한글 noto Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+
+@font-face {
+  font-family: 'GowunDodum-Regular';
+  @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff');
+  
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GowunDodum-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+//넥슨 Lv.1 고딕
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+//여기어때 잘난체 고딕
+@font-face {
+  font-family: 'JalnanGothic';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+//KCC한빛체
+@font-face {
+  font-family: 'KCC-Hanbit';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//조선가는고딕
+@font-face {
+  font-family: 'ChosunSg';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunSg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  // font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  font-family: 'Noto Sans KR';
+  // overflow: auto;
+  // white-space: nowrap;
+  // overflow-y: auto;
+  // overflow-x: auto;
+}
+/************* Font *************/
+
+/************* common CSS *************/
+
+.btn-1 {
+  width: 80%;
+  height: 45px !important;
+  font-size: 20px !important;
+  line-height: 45px !important;
+}
+.main-lay-1 {
+  margin: 15% auto;
+}
+// .admin {
+//   display: flex;
+//   min-height: 100vh;
+//   background-color: #f0f3f8;
+// }
+
+// .dashboard {
+//   min-height: 100vh;
+//   background-color: #f0f3f8;
+// }
+*{
+  margin: 0;
+  padding : 0;
+  list-style: none;
+  text-decoration: none;
+}
+a{
+  cursor: pointer;
+  color: #000;
+}
+img{
+  vertical-align: top;
+}
+div{
+  display: block;
+}
+// html, body{
+//   min-width: 1024px;
+// }
+label{
+  cursor: pointer;
+}
+
+em, p, address{
+  font-style: normal;
+  font-weight: 600;
+}
+
+.contents_main{
+  width: 980px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+}
+.contents_main .main_cont_wrap{
+  position: relative;
+  margin-bottom: 33px;
+}
+.tit_name{
+  position: relative;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+// button, a::before{
+//   border: 4px solid pink;
+// }
+.hidden {
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/************* common CSS *************/
+
+

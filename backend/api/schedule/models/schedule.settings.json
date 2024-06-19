@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedules",
+  "info": {
+    "name": "Schedule",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "booking": {
+      "type": "text"
+    },
+    "place": {
+      "type": "integer",
+      "default": 18000
+    },
+    "date": {
+      "type": "date"
+    },
+    "theater": {
+      "model": "theater",
+      "via": "schedules"
+    },
+    "time": {
+      "type": "time"
+    },
+    "poster": {
+      "model": "poster",
+      "via": "schedules"
+    },
+    "ticketings": {
+      "via": "schedule",
+      "collection": "ticketing"
+    }
+  }
+}
